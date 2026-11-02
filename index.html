@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO base: titolo e descrizione che appaiono su Google -->
+  <title>Trattoria Il Melograno · Cucina toscana a Firenze</title>
+  <meta name="description" content="Trattoria Il Melograno: cucina toscana di stagione, pasta fatta a mano e vini del territorio. Prenota il tuo tavolo online.">
+
+  <!-- Open Graph: anteprima quando il link viene condiviso su WhatsApp/Facebook -->
+  <meta property="og:title" content="Trattoria Il Melograno">
+  <meta property="og:description" content="Cucina toscana di stagione. Prenota online.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80">
+  <meta property="og:type" content="restaurant">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='55' r='38' fill='%23a3262a'/><rect x='44' y='8' width='12' height='16' rx='3' fill='%23556b2f'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dati strutturati: aiutano Google a mostrare orari, indirizzo e "Prenota" nei risultati -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Trattoria Il Melograno",
+    "servesCuisine": "Toscana",
+    "priceRange": "€€",
+    "telephone": "+39 055 000 0000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via dei Melograni 12",
+      "addressLocality": "Firenze",
+      "postalCode": "50100",
+      "addressCountry": "IT"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "19:00", "closes": "23:00" }
+    ],
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo" aria-label="Il Melograno, torna all'inizio">
+        <span class="logo__mark" aria-hidden="true"></span>
+        Il Melograno
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="navMenu">
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#menu">Menu</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#recensioni">Recensioni</a>
+        <a href="#contatti">Contatti</a>
+        <a href="#prenota" class="btn btn--small">Prenota</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Firenze · dal 1987</p>
+        <h1>Cucina toscana,<br><em>fatta come a casa.</em></h1>
+        <p class="hero__lead">Pasta tirata a mano ogni mattina, ingredienti dei produttori locali e una cantina di oltre 120 etichette.</p>
+        <div class="hero__cta">
+          <a href="#prenota" class="btn">Prenota un tavolo</a>
+          <a href="#menu" class="btn btn--ghost">Scopri il menu</a>
+        </div>
+        <ul class="hero__info">
+          <li><strong>Mar–Dom</strong> 12:00–14:30 · 19:00–23:00</li>
+          <li><strong>Lunedì</strong> chiuso</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CHI SIAMO ================= -->
+    <section class="section" id="chi-siamo">
+      <div class="container split">
+        <div class="split__text">
+          <p class="eyebrow">La nostra storia</p>
+          <h2>Tre generazioni ai fornelli</h2>
+          <p>Il Melograno nasce nel 1987 dall'idea di nonna Lucia: una cucina semplice, che segue le stagioni e rispetta la materia prima. Oggi la cucina è guidata dal nipote, lo chef Marco, che porta avanti le ricette di famiglia con qualche tocco contemporaneo.</p>
+          <ul class="features">
+            <li><span>🌿</span> Prodotti a km 0</li>
+            <li><span>🍝</span> Pasta fresca fatta in casa</li>
+            <li><span>🍷</span> 120+ vini toscani</li>
+            <li><span>🌾</span> Opzioni senza glutine e vegane</li>
+          </ul>
+        </div>
+        <div class="split__media">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Sala del ristorante apparecchiata" loading="lazy" width="900" height="600">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section class="section section--alt" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Il menu</p>
+          <h2>I nostri piatti</h2>
+          <p>Il menu cambia con le stagioni. Segnala sempre allergie o intolleranze al personale.</p>
+        </div>
+
+        <!-- Le schede vengono create da js/main.js a partire dall'elenco MENU -->
+        <div class="tabs" role="tablist" id="menuTabs"></div>
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <p class="legend">
+          <span class="tag tag--v">V</span> vegetariano
+          <span class="tag tag--vg">VG</span> vegano
+          <span class="tag tag--gf">GF</span> senza glutine
+          <span class="tag tag--hot">🌶</span> piccante
+        </p>
+        <p class="center"><a href="#" class="link" id="menuPdf">Scarica il menu completo (PDF)</a></p>
+      </div>
+    </section>
+
+    <!-- ================= GALLERIA ================= -->
+    <section class="section" id="galleria">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Galleria</p>
+          <h2>Un assaggio del Melograno</h2>
+        </div>
+        <div class="gallery" id="gallery">
+          <button class="gallery__item gallery__item--tall"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="La sala interna di sera" loading="lazy"></button>
+          <button class="gallery__item"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80" alt="Piatto di pasta fresca" loading="lazy"></button>
+          <button class="gallery__item"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80" alt="Bistecca alla griglia" loading="lazy"></button>
+          <button class="gallery__item gallery__item--wide"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80" alt="Il dehors estivo" loading="lazy"></button>
+          <button class="gallery__item"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80" alt="Dolce della casa" loading="lazy"></button>
+          <button class="gallery__item"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Calici di vino rosso" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RECENSIONI ================= -->
+    <section class="section section--dark" id="recensioni">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Dicono di noi</p>
+          <h2>4,8 ★ su 320 recensioni</h2>
+        </div>
+        <div class="reviews">
+          <blockquote class="review">
+            <p>“I pici al ragù di cinghiale sono i migliori che abbia mai mangiato. Servizio caloroso e vino consigliato perfetto.”</p>
+            <footer>— Giulia R. · ★★★★★</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>“Atmosfera da trattoria vera, prezzi onesti. Siamo tornati due volte nella stessa settimana!”</p>
+            <footer>— Thomas K. · ★★★★★</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>“Ottime opzioni senza glutine, finalmente un posto dove mangiare tranquilla. Tiramisù da applausi.”</p>
+            <footer>— Sara M. · ★★★★★</footer>
+          </blockquote>
+        </div>
+        <p class="small center muted-light">Recensioni di esempio · sito dimostrativo</p>
+      </div>
+    </section>
+
+    <!-- ================= PRENOTAZIONE ================= -->
+    <section class="section" id="prenota">
+      <div class="container booking">
+        <div class="booking__intro">
+          <p class="eyebrow">Prenotazioni</p>
+          <h2>Prenota il tuo tavolo</h2>
+          <p>Compila il modulo: ti confermeremo la prenotazione via email o SMS entro un'ora. Per gruppi oltre 10 persone chiamaci al <a href="tel:+390550000000">055 000 0000</a>.</p>
+          <ul class="booking__notes">
+            <li>Il lunedì siamo chiusi</li>
+            <li>Il tavolo viene tenuto per 15 minuti</li>
+            <li>Disdetta gratuita fino a 2 ore prima</li>
+          </ul>
+        </div>
+
+        <form class="form" id="bookingForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="date">Data *</label>
+              <input type="date" id="date" name="date" required>
+              <small class="error" data-for="date"></small>
+            </div>
+            <div class="field">
+              <label for="guests">Persone *</label>
+              <select id="guests" name="guests" required></select>
+              <small class="error" data-for="guests"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="label">Orario *</span>
+            <div class="slots" id="slots" role="radiogroup" aria-label="Orario">
+              <p class="muted">Scegli prima una data.</p>
+            </div>
+            <small class="error" data-for="time"></small>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Nome e cognome *</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <small class="error" data-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="phone">Telefono *</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+39 ..." required>
+              <small class="error" data-for="phone"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <small class="error" data-for="email"></small>
+          </div>
+
+          <div class="field">
+            <label for="notes">Note (allergie, seggiolone, occasione speciale…)</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <span>Accetto l'<a href="#" class="link">informativa privacy</a> per la gestione della prenotazione *</span>
+          </label>
+          <small class="error" data-for="privacy"></small>
+
+          <button type="submit" class="btn btn--full">Invia prenotazione</button>
+          <p class="small muted" id="demoNote">Sito beta: la prenotazione viene salvata solo nel tuo browser.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= CONTATTI / ORARI / MAPPA ================= -->
+    <section class="section section--alt" id="contatti">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">Dove siamo</p>
+          <h2>Vieni a trovarci</h2>
+
+          <h3>Indirizzo</h3>
+          <p>Via dei Melograni 12<br>50100 Firenze (FI)</p>
+
+          <h3>Orari</h3>
+          <table class="hours">
+            <tr><td>Lunedì</td><td>Chiuso</td></tr>
+            <tr><td>Martedì – Venerdì</td><td>12:00–14:30 · 19:00–23:00</td></tr>
+            <tr><td>Sabato – Domenica</td><td>12:00–15:00 · 19:00–23:30</td></tr>
+          </table>
+          <p class="status" id="openStatus"></p>
+
+          <h3>Contatti</h3>
+          <p>
+            <a href="tel:+390550000000">📞 055 000 0000</a><br>
+            <a href="https://wa.me/390000000000" target="_blank" rel="noopener">💬 WhatsApp</a><br>
+            <a href="mailto:info@ilmelograno.example">✉️ info@ilmelograno.example</a>
+          </p>
+        </div>
+        <div class="contact__map">
+          <iframe
+            title="Mappa: posizione del ristorante"
+            src="https://maps.google.com/maps?q=Piazza%20della%20Signoria%20Firenze&z=15&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#" class="logo logo--light"><span class="logo__mark" aria-hidden="true"></span> Il Melograno</a>
+        <p class="small">Ristorante immaginario · sito demo realizzato da <a href="../../">Vetrina Studio</a></p>
+      </div>
+      <div class="footer__links">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+      </div>
+      <div class="small">
+        P.IVA 00000000000<br>
+        <a href="#">Privacy</a> · <a href="#">Cookie</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bottone "Prenota" fisso su mobile -->
+  <a href="#prenota" class="sticky-cta">Prenota un tavolo</a>
+
+  <!-- Lightbox galleria -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Chiudi">×</button>
+    <img src="" alt="">
+  </div>
+
+  <!-- Conferma prenotazione -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__icon">✓</div>
+      <h3 id="modalTitle">Richiesta inviata!</h3>
+      <p id="modalText"></p>
+      <button class="btn" id="modalClose">Perfetto</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
